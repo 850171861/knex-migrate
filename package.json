@@ -1,0 +1,22 @@
+{
+  "name": "knex1-migrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:dev:migrate:create": "cross-env NODE_ENV=development knex migrate:make",
+    "db:dev:migrate": "cross-env NODE_ENV=development knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.21.5",
+    "knex-migrate": "^1.7.4",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
