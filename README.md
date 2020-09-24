@@ -1,1 +1,1 @@
-第一步 先clone下来，执行npm i，在执行node server2.js，端口4000
+第一步 先clone下来，执行npm i
