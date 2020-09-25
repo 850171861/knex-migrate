@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:dev:migrate:create": "cross-env NODE_ENV=development knex migrate:make",
-    "db:dev:migrate": "cross-env NODE_ENV=development knex migrate:latest"
+    "db:dev:migrate": "cross-env NODE_ENV=development knex migrate:latest",
+    "db:dev:seed:create": "cross-env NODE_ENV=development knex seed:make",
+    "db:dev:seed": "cross-env NODE_ENV=development knex seed:run",
+    "db:prod:migrate:create": "cross-env NODE_ENV=production knex migrate:make"
   },
   "keywords": [],
   "author": "",

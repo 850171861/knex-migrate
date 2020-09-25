@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\administration\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js db:dev:migrate
+
+PATH: 
+  D:\Java\JDK8\bin;D:\Java\JDK8\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PostgreSQL 12;D:\Java\Java\bin;D:\Java\Java\jre\bin;C:\Users\administration\AppData\Local\Microsoft\WindowsApps;C:\Users\administration\AppData\Local\GitHubDesktop\bin;;C:\Users\administration\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\administration\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\wdm\knex1-migrate\package.json: Unexpected token } in JSON at position 550
+      at JSON.parse (<anonymous>)
+      at C:\Users\administration\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\administration\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\administration\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "knex1-migrate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "db:dev:migrate:create": "cross-env NODE_ENV=development knex migrate:make",
+      "db:dev:migrate": "cross-env NODE_ENV=development knex migrate:latest",
+      "db:dev:seed:create": "cross-env NODE_ENV=development knex seed:make",
+      "db:dev:seed": "cross-env NODE_ENV=development knex seed:run",
+      "db:prod:migrate:create": "cross-env NODE_ENV=production knex migrate:make",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "knex": "^0.21.5",
+      "knex-migrate": "^1.7.4",
+      "pg": "^8.3.3"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
